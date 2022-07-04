@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;20;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
 :root{
     --BLACK: #222;
     --main: #465b52;
@@ -18,7 +19,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Spartan", sans-serif ;
+    font-family: "League Spartan", sans-serif ;
 
 }
 
@@ -97,7 +98,7 @@ body {
 
 #navbar li a{
     text-decoration: none;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 600;
     color: var(--leter) ;
     transition: 0.3s ease;
@@ -236,7 +237,7 @@ cursor: pointer;
     padding-top: 7px;
     padding-bottom: 5px;
     color: var(--leter);
-    font-size: 17px;
+    font-size: 18px;
 
 }
 
@@ -292,7 +293,7 @@ cursor: pointer;
 #banner h2{
     color: var(--add);
     text-shadow: 2px 2px 12px var(--leter);
-    font-size: 35px;
+    font-size: 36px;
     padding: 10px 0;
 
 }
@@ -307,7 +308,7 @@ button.normal{
     font-size: 17px;
     font-weight: 600;
     padding: 15px 30px;
-    color: var(--ligth);
+    color: var(--white);
     background-color: var(--second);
     border: none;
     cursor: pointer;
@@ -511,19 +512,19 @@ footer .logo{
 }
 
 footer h4{
-    font-size: 14px;
+    font-size: 17px;
     padding-bottom: 20px;
 }
 
 footer p{
 
-    font-size: 13px;
+    font-size: 15px;
     margin: 0 0 8px 0;
 }
 
 footer a{
 
-    font-size: 13px;
+    font-size: 14px;
     text-decoration: none;
     color: var(--BLACK);
     margin: 0 0 8px 0;
@@ -569,6 +570,49 @@ footer .copyrigth {
 
 #close{
     display: none;
+}
+
+/* Shop Page*/
+
+#page-header{
+    background-image: url("img/banner/b2.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+
+
+#page-header h2, 
+#page-header p{
+    color: var(--white);
+}
+
+#pagination{
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    display: block;
+}
+
+#pagination a{
+    text-decoration: none;
+    background-color: var(--second);
+    color: var(--white);
+    padding: 15px 20px;
+    border-radius: 4px;
+    font-weight: 600;
+
+}
+
+#pagination span{
+    font-size: 15px;
+    font-weight: 600;
+
 }
 
 /* Start media Query*/
@@ -630,13 +674,16 @@ footer .copyrigth {
         font-size: 24PX;
     }
     #banner h2{
-        font-size: 32px;
+        font-size: 34px;
     }
 
 }
 
 
 @media (max-width:799px){
+    #header{
+        padding: 10px 30px;
+    }
     
     #navbar{
         display: flex;
@@ -700,16 +747,31 @@ footer .copyrigth {
         margin: 7px;
         
        }
-       #product1 .pro-container {
+      /*  #product1 .pro-container {
            justify-content: center;
         
        }
        .section-p1{
         padding: 40px 40px;
+    } */
+
+    #banner h2{
+        font-size: 29px;
     }
+    #sm-banner .banner-box{
+        height: 40vh;
+        border-radius: 10px;
+        margin: 20px 0;
+    }
+
+    #banner3 .banner-box{
+        width: 48%;  
+        border-radius: 16px;  
+    }
+
 }
 
-@media (max-width:477px){
+@media (max-width:700px){
     #header{
         padding: 10px 30px;
     }
@@ -762,13 +824,15 @@ footer .copyrigth {
         padding: 0 20px;
     }
     
-    #banner3 .banner-box{
-        width: 100%;  
-        border-radius: 10px;  
-    }
+ 
     #newsletter {
         padding: 10px;
         height: 30vh;
+    }
+
+    #banner3 .banner-box{
+        width: 100%;  
+        border-radius: 10px;  
     }
 
     #newsletter .form{
