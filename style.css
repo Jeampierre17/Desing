@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;20;300;400;500;600;700;800;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;20;300;400;500;600;700;800;900&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
 :root{
     --BLACK: #222;
@@ -572,10 +572,140 @@ footer .copyrigth {
     display: none;
 }
 
+/* Cart Page*/
+
+#cart {
+    overflow-x: auto;
+}
+
+#cart table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+
+#cart table img{
+    width: 70px;
+}
+
+#cart table td:nth-child(1){
+    width: 100px;
+    text-align: center;
+}
+
+#cart table td:nth-child(2){
+    width: 150px;
+    text-align: center;
+}
+
+#cart table td:nth-child(3){
+    width: 250px;
+    text-align: center;
+}
+
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6){
+    width: 150px;
+    text-align: center;
+}
+
+#cart table td:nth-child(5) input{
+    width: 50px;
+    padding: 10px 5px 10px 15px;
+}
+
+#cart table thead {
+    border: 1px solid var(--border);
+    border-right: none;
+    border-left: none;
+ 
+}
+
+#cart table thead td{
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 18px 0;  
+}
+
+#cart table tbody tr td{
+    padding-top: 15px;
+}
+
+#cart table tbody td{
+    font-size: 14px;
+}
+
+#cart-add{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#cart-add #coupon{
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+#coupon h3,
+table h3,
+#subtotal h3{
+    padding-bottom: 16px;
+}
+
+#coupon input{
+    padding: 10px 20px ;
+    outline: none;
+    width: 60%;
+    margin-right: 10px;
+    border: 1px solid var(--border);
+    font-size: 15px;
+}
+
+#coupon button,
+#subtotal button{
+    color: var(--white);
+    padding: 12px 20px;
+    background-color: var(--second);
+    font-size: 14PX;
+    letter-spacing: 2px;
+}
+
+
+#subtotal button{
+    width: 50%;
+    margin: 0 0 0 50%;
+    border-radius: 6px;
+}   
+
+#subtotal{
+    width: 50%;
+    margin-bottom: 30px;
+    border: 1px solid var(--border);
+    padding: 30px;
+ 
+}
+
+#subtotal table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#subtotal table td{
+    width: 50%;
+    border: 1px solid var(--border);
+    padding: 10px;
+    font-size: 14px;
+}
+
 /* Shop Page*/
 
 #page-header{
-    background-image: url("img/banner/b2.jpg");
+    background-image: url("img/banner/b5.jpg");
+    background-position: 100% 10%;
     width: 100%;
     height: 40vh;
     background-size: cover;
@@ -612,6 +742,37 @@ footer .copyrigth {
 #pagination span{
     font-size: 15px;
     font-weight: 600;
+
+}
+
+#form-details .people div{
+    padding-bottom: 25px;
+    display: flex;
+    align-items: flex-start;
+}
+
+#form-details .people div img{
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    margin-right: 15px ;
+}
+
+#form-details .people div p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 25px;
+}
+
+#form-details .people div p span{
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--leter);
+}
+
+.people{
+    padding: 50px 15px 0 0;
 
 }
 
@@ -678,6 +839,40 @@ footer .copyrigth {
     }
 
 }
+
+@media (max-width:1070px){
+
+    #cart table td:nth-child(1)  {
+        width: 65px;
+       
+    }
+    #cart table thead td:nth-child(2)  {
+        width: 65px;
+        padding-left: 65px;
+       
+    }
+    
+    #cart table thead td:nth-child(3)  {
+        padding-left: 45px;
+    }
+    
+    #cart table thead td:nth-child(4)  {
+        padding-left: 25px;
+    }
+    
+    #cart table td:nth-child(5) input {
+        width: 35px;
+        padding: 5px 5px 5px 10px;
+        border: 1px solid var(--border);
+    }
+    #cart table img {
+        width: 50px;
+    }
+    
+ 
+
+}
+
 
 
 @media (max-width:799px){
@@ -792,6 +987,50 @@ footer .copyrigth {
         margin: 30px auto 0 auto;
     }
 
+    #form-details form{
+        padding: 40px;
+    }
+
+    #form-details form{
+        width: 50%;
+      
+    }
+
+    #cart-add{
+        flex-direction: column;
+    }
+
+    #coupon{
+       width: 100% !important; 
+    }
+
+    #subtotal{
+        width: 100% !important;
+        padding: 20px !important;
+    }
+
+    
+#cart table{
+    width: auto !important;
+    display: block !important;
+}
+
+#cart table thead{
+    display: flex;
+}
+#cart table tbody tr .material-icons-outlined{
+    font-size: 16px !important;
+}
+
+#cart table thead td,
+#cart table tbody td{
+        font-size: 11px !important;
+       
+}
+#oculta1{
+    display: none;
+}
+
 }
 
 @media (max-width:700px){
@@ -877,8 +1116,77 @@ footer .copyrigth {
       margin-right: 0px;
     }
     #prodetails .sigle-pro-details{
-        width: 100%;
+        width: 100% !important;
       }
+
+    #contact-details{
+        flex-direction: column;
+    }
+
+    #contact-details .details{
+        width: 100% !important;
+        margin-bottom: 30px;
+    }  
+    #contact-details .map{
+        width: 100% !important;
+    }
+
+    #form-details{
+        margin: 10px !important;
+        padding: 30px 10px !important;
+        flex-wrap: wrap;
+    }
+
+    #form-details form{
+        width: 100% !important;
+    }
+
+    #oculta{
+        display: none;
+    }
+
+    
+}
+
+@media (max-width:375px){
+    #cart table thead td:nth-child(2) {
+       
+        padding-left: 20px;
+    }
+
+    #cart table thead td:nth-child(3) {
+       
+        padding-left: 20px;
+    }
+    #cart table thead td:nth-child(4) {
+        padding-left: 15px;
+    }
+    #cart table thead td:nth-child(5) {
+       
+        padding-left: 10px;
+    }
+
+    .internal{
+        display: flex;
+    }
+    #coupon input {
+        font-size: 10px !important;
+        font-weight: 600;
+    }
+    #subtotal button {
+        width: 58%;
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+
+    #coupon button{
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width:500px){
+
 }
 
 /* Sigle Product */ 
@@ -982,7 +1290,7 @@ footer .copyrigth {
 /* About Page */
 
 #page-header.about-header{
-    background-image: url("img/blog/b2.jpg");
+    background-image: url("img/banner/b13.jpg");
     background-position: center;
  
 }
@@ -1025,3 +1333,96 @@ footer .copyrigth {
     border-radius: 20px;
 }
 
+#form-details{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+    padding: 80px;
+    border: 1px solid var(--border);
+} 
+
+#form-details form{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form-details form input,
+#form-details form textarea{
+    width: 100%;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid var(--ligth);
+}
+
+#form-details form button{
+    background-color: var(--second);
+    color: var(--white);
+}
+
+/* Contact Page */ 
+
+#page-header.contact-header{
+    background-image: url("img/about/banner.png");
+    background-position: center;
+    opacity: 0.8;
+ 
+}
+
+#contact-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+}
+
+#contact-details .details{
+    width: 40%;
+
+}
+
+#contact-details .details span,
+#form-details form span{
+  font-size: 12px;
+    
+}
+
+#contact-details .details h2,
+#form-details form h2{
+    font-size: 26px;
+    line-height: 35px;
+    padding: 20px 0;
+}
+
+#contact-details .details h3{
+    font-size: 20px;
+    padding: 1px 0;
+  }
+
+  #contact-details .details li{
+    list-style: none;
+    display: flex;
+    padding: 10px 0;
+}
+
+#contact-details .details li span{
+    font-size: 18px;
+    padding-right: 22px;
+}
+
+#contact-details .details li p{
+    margin: 0;
+    font-size: 18px;
+    padding-top: 7px;
+}
+
+#contact-details .map{
+    width: 55%;
+    height: 400px;
+}
+
+#contact-details .map iframe{
+    width: 100%;
+    height: 100%;
+}
