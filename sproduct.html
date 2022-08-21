@@ -35,14 +35,65 @@
                 <li><a href="about.html">Nosotros</a></li>
                 <!-- <li><a href="ubic.html">Ubicación</a></li> -->
                 <li><a href="contact.html">Contacto</a></li>
-                <li id="lg-bag"><a href="cart.html"><span class="material-icons-outlined">shopping_bag</span></a></li>
+                <li id="lg-bag"><a href="" id="shop"><span
+                            class="material-icons-outlined">shopping_bag</span></a>
+                    <div id="Cariito"></div>
+                </li>
                 <a href="#" id="close"><span class="material-icons-outlined">
                         close
                     </span></a>
 
             </ul>
+
+
         </div>
-        <div id="mobile"> <a href="cart.ttml"><span class="material-icons-outlined">shopping_bag</span></a>
+
+        <div id="context">
+            <ul id="carrito" class="oculta">
+                <li class="cabezal">
+                    <a href="#" id="closeCar"><span class="material-icons-outlined">
+                            close
+                        </span></a> <a href="" id="title">
+                        <h4>Mi Carrito</h4>
+                    </a> <a href=""></a>
+                </li>
+                <li id="cart" class="confirm">
+
+                    <div class="photo"><img src="img/products/f1.jpg" alt=""></div>
+                    <div class="boxes">
+                        <div class="detalles name">
+                            <h6>NombreProducto</h6>
+                        </div>
+                        <div class="detalles interno">
+                            <input type="number" name="" id="" value="1">
+                            <h6>$ 3333.55</h6>
+                            <a href=""><span class="material-icons-outlined">
+                                    do_disturb_on
+                                </span></a>
+                        </div>
+                    </div>
+                </li>
+                <li id="comprar">
+
+                    <h3 class="subtotal">Subtotal</h3>
+                    <strong>
+                        <h3 class="subtotal">$000000</h3>
+                    </strong>
+                    <div id="comprar" class="duo">
+                        <button class="normal end" id="add">
+                            <h4>CONTINUAR COMPRANDO</h4>
+                        </button>
+                        <button class="normal end second" id="add">
+                            <H3>FINALIZAR COMPRAR</H3>
+                        </button>
+                    </div>
+
+                </li>
+            </ul>
+            <div class="opacar"></div>
+
+        </div>
+        <div id="mobile"> <a href="" id="shop"><span class="material-icons-outlined">shopping_bag</span></a>
             <span id="bar" class="material-icons-outlined">
                 subject
             </span>
@@ -85,7 +136,7 @@
             </select>
             <span>
                 <input type="number" value="1" ra>
-                <button class="normal">
+                <button class="normal" id="add">
                     <span class="material-icons-round">
                         add_shopping_cart
                     </span>
@@ -231,7 +282,7 @@
                             add_shopping_cart
                         </span></a>
                 </div>
-              
+
             </div>
         </div>
     </section>
@@ -334,18 +385,18 @@
         </div>
     </footer>
 
-    <script>  
+    <script>
         let MainI = document.getElementById("MainImg");
         let smallimg = document.getElementsByClassName("small-img");
-           
-           for (let i=0; i < smallimg.length; i++) {
-           
-           smallimg[i].onclick = function () {
-            
-                  MainI.src = smallimg[i].src;
-              }
-           }
-           </script>
+
+        for (let i = 0; i < smallimg.length; i++) {
+
+            smallimg[i].onclick = function () {
+
+                MainI.src = smallimg[i].src;
+            }
+        }
+    </script>
     <script async src="script.js"></script>
 </body>
 
