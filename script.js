@@ -8,69 +8,51 @@ const itemTitle = document.querySelector(".sigle-pro-details h4");
 const carrito = document.querySelector('#carrito');
 const closeCar = document.querySelector('#closeCar');
 const opacar = document.querySelector(".opacar");
- let contador = 0;
- let h5 = document.createElement("h5");
-
- shop.addEventListener('focus',(event) => {
-   event.preventDefault;
-    carrito.classList.remove('oculta');
-    opacar.classList.add("visible");
- }
- )
-
- 
- closeCar.addEventListener('focus',() => {
-    carrito.classList.add("oculta");
-    opacar.classList.remove("visible");
- }
- )
- 
-//     if(event.target.classList.contains("material-icons-round")) {  
-      
-     
-//             if (elementsTitle[i].innerText === itemTitle) {
-//               let elementQuantity = elementsTitle[
-//                 i
-//               ].parentElement.parentElement.parentElement.querySelector(
-//                 '.shoppingCartItemQuantity'
-//               );
-//               elementQuantity.value++;
-//               $('.toast').toast('show');
-//               updateShoppingCartTotal();
-//               return;
-//             }
-//         }
-        
-//         contador ++
-//          h5.textContent = contador
-         
-//              shop.append(h5)
-//              console.log(h5)
-//              console.log(itemTitle)
-           
-//      }
-// )
+const btflotan = document.querySelector('button.btflotan');
+const msflota = document.querySelector('.msflota');
+let contador = 0;
+let h5 = document.createElement("h5");
 
 
 
 
+if (bar) {
+   bar.addEventListener('click', () => {
+      nav.classList.add("active");
 
 
-
-if(bar){
-    bar.addEventListener('click', () => {
-       nav.classList.add("active");
-    
-    
-    })
+   })
 }
 
 
-if(close){
-    close.addEventListener('click', () => {
-       nav.classList.remove("active");
- 
-    
-    })
+if (close) {
+   close.addEventListener('click', () => {
+      nav.classList.remove("active");
+
+
+   })
+};
+
+
+shop.addEventListener('focus', removeOculta);
+
+function removeOculta() {
+   //event.preventDefault;
+   carrito.classList.add('active');
+   opacar.classList.add("visible");
 }
+
+
+
+closeCar.addEventListener('click', () => {
+   carrito.classList.remove("active");
+   opacar.classList.remove("visible");
+})
+
+
+// btflotan.addEventListener('mousemove', toggleOculta);
+// function toggleOculta() {
+//    msflota.classList.toggle("oculta");
+
+// }
 

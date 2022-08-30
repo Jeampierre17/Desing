@@ -35,9 +35,8 @@
                 <li><a href="about.html">Nosotros</a></li>
                 <!-- <li><a href="ubic.html">Ubicación</a></li> -->
                 <li><a href="contact.html">Contacto</a></li>
-                <li id="lg-bag"><a href="" id="shop"><span
-                            class="material-icons-outlined">shopping_bag</span></a>
-                    <div id="Cariito"></div>
+                <li id="lg-bag"><a href="" id="shop"><span class="material-icons-outlined">shopping_bag</span></a>
+
                 </li>
                 <a href="#" id="close"><span class="material-icons-outlined">
                         close
@@ -49,7 +48,7 @@
         </div>
 
         <div id="context">
-            <ul id="carrito" class="oculta">
+            <ul id="carrito">
                 <li class="cabezal">
                     <a href="#" id="closeCar"><span class="material-icons-outlined">
                             close
@@ -135,27 +134,55 @@
                 <option value="">Large</option>
             </select>
             <span>
-                <input type="number" value="1" ra>
+                <input type="number" value="1" min="1" max="5">
                 <button class="normal" id="add">
                     <span class="material-icons-round">
                         add_shopping_cart
                     </span>
                     <h3>Agregar</h3>
                 </button>
-            </span>
-            <div class="details"><span class="material-icons-outlined">
-                    local_shipping
-                </span>
-                <h5>Envíos <strong>GRATIS</strong></h5>
-                <H6>Llega entre 48hs</H6>
-            </div>
+                <div class="details">
+                    <div class="flota">
+                        <button class="btflotan"><span class="material-symbols-outlined">
+                            credit_card
+                            </span>
+                            <div class="msflota pay">
+                                <h5>Metodos de Pagos</h5>
+                                <H6>3 Cuotas sin interes</H6>
+                                <div class="flecha"></div>
+                            </div>
+                        </button>
+                        <button class="btflotan"><span class="material-icons-outlined">
+                                local_shipping
+                            </span>
+                            <div class="msflota ">
+                                <h5>Envíos <strong>GRATIS</strong></h5>
+                                <H6>Llega entre 48hs</H6>
 
-            <div class="details"><span class="material-icons-outlined">
-                    storefront
-                </span>
-                <h5>Retiro <strong>GRATIS</strong></h5>
-                <H6>Nuestras Sucursales</H6>
-            </div>
+                                <div class="flecha"></div>
+                            </div>
+                        </button>
+
+
+                        <button class="btflotan"><span class="material-icons-outlined">
+                                storefront
+                            </span>
+                            <div class="msflota second">
+                                <h5>Retiro <strong>GRATIS</strong></h5>
+                                <H6>Nuestras Sucursales</H6>
+                                <div class="flecha "></div>
+                            </div>
+                        </button>
+
+
+
+
+                    </div>
+                </div>
+            </span>
+
+
+
             <H4>Detalles del Producto</H4>
             <span>Care for fiber: al menos 30% poliéster reciclado.
 
