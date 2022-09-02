@@ -2,7 +2,9 @@ const bar = document.getElementById('bar');
 const close = document.getElementById('close');
 const nav = document.getElementById('navbar');
 const add = document.querySelector('#lg-bag');
-const shop = document.querySelector('#shop');
+const buttonAdd = document.querySelector('#addProduct');
+const shop = document.getElementById('shop');
+const shopMobile = document.querySelector('#shopMobile');
 const elementsTitle = document.querySelector("h4");
 const itemTitle = document.querySelector(".sigle-pro-details h4");
 const carrito = document.querySelector('#carrito');
@@ -10,7 +12,8 @@ const closeCar = document.querySelector('#closeCar');
 const opacar = document.querySelector(".opacar");
 const btflotan = document.querySelector('button.btflotan');
 const msflota = document.querySelector('.msflota');
-let contador = 0;
+const quantityProduct = document.querySelector(".quatity")
+var contador = 0;
 let h5 = document.createElement("h5");
 
 
@@ -36,10 +39,14 @@ if (close) {
 
 shop.addEventListener('focus', removeOculta);
 
+shopMobile.addEventListener('click', removeOculta);
+
 function removeOculta() {
    //event.preventDefault;
    carrito.classList.add('active');
    opacar.classList.add("visible");
+   nav.classList.remove("active");
+
 }
 
 
@@ -49,10 +56,10 @@ closeCar.addEventListener('click', () => {
    opacar.classList.remove("visible");
 })
 
-
-// btflotan.addEventListener('mousemove', toggleOculta);
-// function toggleOculta() {
-//    msflota.classList.toggle("oculta");
-
-// }
-
+buttonAdd.addEventListener('click',  () => {
+   console.log(contador);
+    contador= contador + 1;
+     quantityProduct.textContent = contador;
+    
+  })
+  

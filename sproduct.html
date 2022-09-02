@@ -35,8 +35,10 @@
                 <li><a href="about.html">Nosotros</a></li>
                 <!-- <li><a href="ubic.html">Ubicación</a></li> -->
                 <li><a href="contact.html">Contacto</a></li>
-                <li id="lg-bag"><a href="" id="shop"><span class="material-icons-outlined">shopping_bag</span></a>
-
+                <li id="lg-bag"><a id="shop"><span class="material-icons-outlined">shopping_bag</span></a>
+                    <section>
+                        <h4 class="quatity"></h4>
+                    </section>
                 </li>
                 <a href="#" id="close"><span class="material-icons-outlined">
                         close
@@ -44,6 +46,14 @@
 
             </ul>
 
+
+        </div>
+
+        <div id="mobile">
+            <li><a id="shopMobile"><span class="material-icons-outlined">shopping_bag</span></a></li>
+            <li> <span id="bar" class="material-icons-outlined">
+                    subject
+                </span></li>
 
         </div>
 
@@ -64,7 +74,7 @@
                             <h6>NombreProducto</h6>
                         </div>
                         <div class="detalles interno">
-                            <input type="number" name="" id="" value="1">
+                            <input type="number" name="" id="" value="1" min="1" max="9">
                             <h6>$ 3333.55</h6>
                             <a href=""><span class="material-icons-outlined">
                                     do_disturb_on
@@ -92,16 +102,11 @@
             <div class="opacar"></div>
 
         </div>
-        <div id="mobile"> <a href="" id="shop"><span class="material-icons-outlined">shopping_bag</span></a>
-            <span id="bar" class="material-icons-outlined">
-                subject
-            </span>
 
-        </div>
     </section>
 
 
-    <section id="prodetails" class="section-p1">
+    <section id="prodetails" class="section-p2">
         <div class="sigle-pro-image">
             <img src="img/products/f1.jpg" width="100%" id="MainImg" alt="">
             <div class="small-img-group">
@@ -134,8 +139,8 @@
                 <option value="">Large</option>
             </select>
             <span>
-                <input type="number" value="1" min="1" max="5">
-                <button class="normal" id="add">
+                <input type="number" value="1" min="1" max="9">
+                <button class="normal" id="addProduct">
                     <span class="material-icons-round">
                         add_shopping_cart
                     </span>
@@ -144,7 +149,7 @@
                 <div class="details">
                     <div class="flota">
                         <button class="btflotan"><span class="material-symbols-outlined">
-                            credit_card
+                                credit_card
                             </span>
                             <div class="msflota pay">
                                 <h5>Metodos de Pagos</h5>

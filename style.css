@@ -57,8 +57,12 @@ p {
 }
 
 .section-p1 {
+    margin: 40px 80px;
+}
+.section-p2 {
     margin: 40px 180px;
 }
+
 
 body {
     width: 100%;
@@ -345,6 +349,7 @@ button.white {
     display: flex;
     justify-content: space-between;
     gap: 4px;
+    flex-wrap: wrap;
 }
 
 #sm-banner .banner-box {
@@ -591,6 +596,8 @@ footer .copyrigth {
 #carrito.active {
     right: 0px;
 }
+
+
 
 
 #carrito {
@@ -1069,7 +1076,7 @@ table h3,
         width: 50px;
     }
 
-
+  
 
 }
 
@@ -1083,23 +1090,30 @@ table h3,
     }
 
     #navbar {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-        position: absolute;
-        top: 0;
-        right: -300px;
-        height: 100vh;
-        width: 300px;
-        background-color: var(--ligth);
-        box-shadow: 0 40px 60px rgb(0, 0, 0, 0.02);
+       
+        display: flex !important;   
+
         padding: 80px 0 0 10px;
         transition: 0.3s;
+         top: 63px; 
+         flex-direction: column;
+         align-items: flex-start;
+         justify-content: flex-start;
+         position: fixed;
+         top: 63px;
+         height: 100vh;
+         width: 300px;
+         right: -300px;
+         background-color: var(--ligth);
+         box-shadow: 0 40px 60px rgb(0 0 0 / 2%);
+         z-index: 999999 !important;
+         transition: all 0.3s ease-in-out;
+         overflow: visible;
     }
 
     #navbar.active {
         right: 0px;
+
     }
 
     #navbar li {
@@ -1111,6 +1125,11 @@ table h3,
         align-items: center;
     }
 
+  #mobile li{
+        list-style: none;
+        position: relative;
+     
+    }
     #close {
         display: none;
     }
@@ -1118,7 +1137,7 @@ table h3,
     #mobile span {
         color: var(--leter);
         font-size: 24px;
-        padding-left: 20px;
+        margin-left: 20px;
 
     }
 
@@ -1148,7 +1167,10 @@ table h3,
 
     }
 
-
+    .section-p2 {
+        margin: 40px 80px !important;
+    }
+    
     /*  #product1 .pro-container {
            justify-content: center;
         
@@ -1384,8 +1406,14 @@ table h3,
 
 @media (max-width:500px) {
     .flota {
-
-        top: 520px;
+     
+        top: 350px;
+    }
+    .btflotan:hover .msflota {
+        line-height: 22px !important;
+    }
+    .section-p2 {
+        margin: 20px 40px !important;
     }
 
 }
@@ -1427,6 +1455,9 @@ table h3,
 
     #coupon button {
         font-size: 12px;
+    }
+    .flota{
+        right: 15px !important;
     }
 
 }
@@ -1500,8 +1531,11 @@ table h3,
 
 }
 
-button#add {
+button#addProduct{
     border-radius: 12px;
+}
+button#add{
+    border-radius: 16px;
 }
 
 #prodetails .sigle-pro-details h3 {
