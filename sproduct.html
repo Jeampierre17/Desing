@@ -35,7 +35,7 @@
                 <li><a href="about.html">Nosotros</a></li>
                 <!-- <li><a href="ubic.html">Ubicación</a></li> -->
                 <li><a href="contact.html">Contacto</a></li>
-                <li id="lg-bag"><a id="shop"><span class="material-icons-outlined">shopping_bag</span></a>
+                <li id="lg-bag"><a href="" id="shop"><span class="material-icons-outlined">shopping_bag</span></a>
                     <section>
                         <h4 class="quatity"></h4>
                     </section>
@@ -68,19 +68,7 @@
                 </li>
                 <li id="cart" class="confirm">
 
-                    <div class="photo"><img src="img/products/f1.jpg" alt=""></div>
-                    <div class="boxes">
-                        <div class="detalles name">
-                            <h6>NombreProducto</h6>
-                        </div>
-                        <div class="detalles interno">
-                            <input type="number" name="" id="" value="1" min="1" max="9">
-                            <h6>$ 3333.55</h6>
-                            <a href=""><span class="material-icons-outlined">
-                                    do_disturb_on
-                                </span></a>
-                        </div>
-                    </div>
+             
                 </li>
                 <li id="comprar">
 
@@ -108,7 +96,8 @@
 
     <section id="prodetails" class="section-p2">
         <div class="sigle-pro-image">
-            <img src="img/products/f1.jpg" width="100%" id="MainImg" alt="">
+            <section id="imgCart">
+            <img src="img/products/f1.jpg" width="100%" id="MainImg" class="addimg" alt=""></section>
             <div class="small-img-group">
                 <div class="small-img-col">
                     <img src="img/products/f1.jpg" width="100%" class="small-img" alt="">
@@ -127,63 +116,64 @@
         </div>
 
         <div class="sigle-pro-details">
-            <h6>Home / Camisetas</h6>
-            <h4> Men's Fashion T Camisetas</h4>
-            <h2>$3900.00</h2>
+            <section class="addCart">
+                <h4 class="title"> Men's Fashion T Camisetas</h4>
+                <h2 class="price">$3900.00</h2>
 
-            <select name="" id="">
-                <option value="">Talla</option>
-                <option value="">XL</option>
-                <option value="">XXL</option>
-                <option value="">Small</option>
-                <option value="">Large</option>
-            </select>
-            <span>
-                <input type="number" value="1" min="1" max="9">
-                <button class="normal" id="addProduct">
-                    <span class="material-icons-round">
-                        add_shopping_cart
-                    </span>
-                    <h3>Agregar</h3>
-                </button>
-                <div class="details">
-                    <div class="flota">
-                        <button class="btflotan"><span class="material-symbols-outlined">
-                                credit_card
-                            </span>
-                            <div class="msflota pay">
-                                <h5>Metodos de Pagos</h5>
-                                <H6>3 Cuotas sin interes</H6>
-                                <div class="flecha"></div>
-                            </div>
-                        </button>
-                        <button class="btflotan"><span class="material-icons-outlined">
-                                local_shipping
-                            </span>
-                            <div class="msflota ">
-                                <h5>Envíos <strong>GRATIS</strong></h5>
-                                <H6>Llega entre 48hs</H6>
+                <select name="" id="">
+                    <option value="">Talla</option>
+                    <option value="">XL</option>
+                    <option value="">XXL</option>
+                    <option value="">Small</option>
+                    <option value="">Large</option>
+                </select>
+                <span>
+                    <input class="cant" type="number" value="1" min="1" max="9">
+                    <button class="normal" id="addProduct">
+                        <span class="material-icons-round">
+                            add_shopping_cart
+                        </span>
+                        <h3>Agregar</h3>
+                    </button>
+            </section>
+            <div class="details">
+                <div class="flota">
+                    <button class="btflotan"><span class="material-symbols-outlined">
+                            credit_card
+                        </span>
+                        <div class="msflota pay">
+                            <h5>Metodos de Pagos</h5>
+                            <H6>3 Cuotas sin interes</H6>
+                            <div class="flecha"></div>
+                        </div>
+                    </button>
+                    <button class="btflotan"><span class="material-icons-outlined">
+                            local_shipping
+                        </span>
+                        <div class="msflota ">
+                            <h5>Envíos <strong>GRATIS</strong></h5>
+                            <H6>Llega entre 48hs</H6>
 
-                                <div class="flecha"></div>
-                            </div>
-                        </button>
-
-
-                        <button class="btflotan"><span class="material-icons-outlined">
-                                storefront
-                            </span>
-                            <div class="msflota second">
-                                <h5>Retiro <strong>GRATIS</strong></h5>
-                                <H6>Nuestras Sucursales</H6>
-                                <div class="flecha "></div>
-                            </div>
-                        </button>
+                            <div class="flecha"></div>
+                        </div>
+                    </button>
 
 
+                    <button class="btflotan"><span class="material-icons-outlined">
+                            storefront
+                        </span>
+                        <div class="msflota second">
+                            <h5>Retiro <strong>GRATIS</strong></h5>
+                            <H6>Nuestras Sucursales</H6>
+                            <div class="flecha "></div>
+                        </div>
+                    </button>
 
 
-                    </div>
+
+
                 </div>
+            </div>
             </span>
 
 
@@ -430,6 +420,7 @@
         }
     </script>
     <script async src="script.js"></script>
+    <script async src="scriptProduct.js"></script>
 </body>
 
 </html>

@@ -12,7 +12,8 @@ const closeCar = document.querySelector('#closeCar');
 const opacar = document.querySelector(".opacar");
 const btflotan = document.querySelector('button.btflotan');
 const msflota = document.querySelector('.msflota');
-const quantityProduct = document.querySelector(".quatity")
+const quantityProduct = document.querySelector(".quatity");
+const cantidad= document.querySelector("#cantidad")
 var contador = 0;
 let h5 = document.createElement("h5");
 
@@ -41,8 +42,8 @@ shop.addEventListener('focus', removeOculta);
 
 shopMobile.addEventListener('click', removeOculta);
 
-function removeOculta() {
-   //event.preventDefault;
+function removeOculta(event) {
+   event.preventDefault;
    carrito.classList.add('active');
    opacar.classList.add("visible");
    nav.classList.remove("active");
