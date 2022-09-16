@@ -26,7 +26,7 @@
 <body>
 
     <section id="header">
-        <a href="#"><img src="img/logo.png" class="logo" alt=""></a>
+        <a  ><img src="img/logo.png" class="logo" id="addProduct" alt=""></a>
         <div>
 
             <ul id="navbar">
@@ -35,8 +35,11 @@
                 <li><a href="about.html">Nosotros</a></li>
                 <!-- <li><a href="ubic.html">Ubicación</a></li> -->
                 <li><a href="contact.html">Contacto</a></li>
-                <li id="lg-bag"><a href="" id="shop"><span class="material-icons-outlined">shopping_bag</span></a></li>
-                <a href="#" id="close"><span class="material-icons-outlined">
+                <li id="lg-bag"><a href="" id="shop"><span class="material-icons-outlined">shopping_bag</span></a>
+                    <section>
+                        <h4 class="quatity"></h4>
+                    </section></li>
+                <a   id="close"><span class="material-icons-outlined">
                         close
                     </span></a>
 
@@ -53,33 +56,18 @@
         <div id="context">
             <ul id="carrito">
                 <li class="cabezal">
-                    <a href="#" id="closeCar"><span class="material-icons-outlined">
+                    <a   id="closeCar"><span class="material-icons-outlined">
                             close
                         </span></a> <a href="" id="title">
                         <h4>Mi Carrito</h4>
                     </a> <a href=""></a>
                 </li>
-                <li id="cart" class="confirm">
-
-                    <div class="photo"><img src="img/products/f1.jpg" alt=""></div>
-                    <div class="boxes">
-                        <div class="detalles name">
-                            <h6>NombreProducto</h6>
-                        </div>
-                        <div class="detalles interno">
-                            <input type="number" name="" id="cantidad" value="1" min="1" max="9">
-                            <h6>$ 3333.55</h6>
-                            <a href=""><span class="material-icons-outlined">
-                                    do_disturb_on
-                                </span></a>
-                        </div>
-                    </div>
-                </li>
+                
                 <li id="comprar">
 
                     <h3 class="subtotal">Subtotal</h3>
                     <strong>
-                        <h3 class="subtotal">$000000</h3>
+                        <h3 class="subtotal cartTotal">$000000</h3>
                     </strong>
                     <div id="comprar" class="duo">
                         <button class="normal end" id="add">
@@ -116,7 +104,7 @@
         <div class="pro-container">
             <div class="pro-container">
                 <div class="pro" onclick="window.location.href='sproduct.html'">
-                    <img loading="lazy" src="img/products/f1.jpg" alt="">
+                    <img class="imgadd" loading="lazy" src="img/products/f1.jpg" alt="">
                     <div class="des">
                         <span class="categoria">Camisas</span>
                         <h5>Nordico Moderno - Mangas Cortas</h5>
@@ -139,7 +127,7 @@
                         </div>
                         <h4>$2.900</h4>
                     </div>
-                    <a href="#"><span class="material-icons-round" id="add">
+                    <a  ><span class="material-icons-round" id="add">
                             add_shopping_cart
                         </span></a>
                 </div>
@@ -165,9 +153,9 @@
                                 grade
                             </span>
                         </div>
-                        <h4>$2.900</h4>
+                        <h4 class="price">$2.900</h4>
                     </div>
-                    <a href="#"><span class="material-icons-round" id="add">
+                    <a  ><span class="material-icons-round" id="add">
                             add_shopping_cart
                         </span></a>
                 </div>
@@ -195,7 +183,7 @@
                         </div>
                         <h4>$2.900</h4>
                     </div>
-                    <a href="#"><span class="material-icons-round" id="add">
+                    <a  ><span class="material-icons-round" id="add">
                             add_shopping_cart
                         </span></a>
                 </div>
@@ -223,7 +211,7 @@
                         </div>
                         <h4>$2.900</h4>
                     </div>
-                    <a href="#"><span class="material-icons-round" id="add">
+                    <a  ><span class="material-icons-round" id="add">
                             add_shopping_cart
                         </span></a>
                 </div>
@@ -251,7 +239,7 @@
                         </div>
                         <h4>$2.900</h4>
                     </div>
-                    <a href="#"><span class="material-icons-round" id="add">
+                    <a  ><span class="material-icons-round" id="add">
                             add_shopping_cart
                         </span></a>
                 </div>
@@ -279,7 +267,7 @@
                         </div>
                         <h4>$2.900</h4>
                     </div>
-                    <a href="#"><span class="material-icons-round" id="add">
+                    <a  ><span class="material-icons-round" id="add">
                             add_shopping_cart
                         </span></a>
                 </div>
@@ -307,7 +295,7 @@
                         </div>
                         <h4>$2.900</h4>
                     </div>
-                    <a href="#"><span class="material-icons-round" id="add">
+                    <a  ><span class="material-icons-round" id="add">
                             add_shopping_cart
                         </span></a>
                 </div>
@@ -335,7 +323,7 @@
                         </div>
                         <h4>$2.900</h4>
                     </div>
-                    <a href="#"><span class="material-icons-round" id="add">
+                    <a  ><span class="material-icons-round" id="add">
                             add_shopping_cart
                         </span></a>
                 </div>
@@ -368,7 +356,7 @@
                                 </div>
                                 <h4>$2.900</h4>
                             </div>
-                            <a href="#"><span class="material-icons-round" id="add">
+                            <a  ><span class="material-icons-round" id="add">
                                     add_shopping_cart
                                 </span></a>
                         </div>
@@ -396,7 +384,7 @@
                                 </div>
                                 <h4>$2.900</h4>
                             </div>
-                            <a href="#"><span class="material-icons-round" id="add">
+                            <a  ><span class="material-icons-round" id="add">
                                     add_shopping_cart
                                 </span></a>
                         </div>
@@ -424,7 +412,7 @@
                                 </div>
                                 <h4>$2.900</h4>
                             </div>
-                            <a href="#"><span class="material-icons-round" id="add">
+                            <a  ><span class="material-icons-round" id="add">
                                     add_shopping_cart
                                 </span></a>
                         </div>
@@ -452,7 +440,7 @@
                                 </div>
                                 <h4>$2.900</h4>
                             </div>
-                            <a href="#"><span class="material-icons-round" id="add">
+                            <a  ><span class="material-icons-round" id="add">
                                     add_shopping_cart
                                 </span></a>
                         </div>
@@ -480,7 +468,7 @@
                                 </div>
                                 <h4>$2.900</h4>
                             </div>
-                            <a href="#"><span class="material-icons-round" id="add">
+                            <a  ><span class="material-icons-round" id="add">
                                     add_shopping_cart
                                 </span></a>
                         </div>
@@ -508,7 +496,7 @@
                                 </div>
                                 <h4>$2.900</h4>
                             </div>
-                            <a href="#"><span class="material-icons-round" id="add">
+                            <a  ><span class="material-icons-round" id="add">
                                     add_shopping_cart
                                 </span></a>
                         </div>
@@ -536,7 +524,7 @@
                                 </div>
                                 <h4>$2.900</h4>
                             </div>
-                            <a href="#"><span class="material-icons-round" id="add">
+                            <a  ><span class="material-icons-round" id="add">
                                     add_shopping_cart
                                 </span></a>
                         </div>
@@ -564,7 +552,7 @@
                                 </div>
                                 <h4>$2.900</h4>
                             </div>
-                            <a href="#"><span class="material-icons-round" id="add">
+                            <a  ><span class="material-icons-round" id="add">
                                     add_shopping_cart
                                 </span></a>
                         </div>
@@ -574,9 +562,9 @@
     </section>
 
     <section id="pagination" class="section-p1">
-        <a href="#">1</a>
-        <a href="#">2</a>
-        <a href="#"><span class="material-icons-outlined">
+        <a  >1</a>
+        <a  >2</a>
+        <a  ><span class="material-icons-outlined">
                 arrow_forward_ios
             </span></a>
     </section>
@@ -641,24 +629,24 @@
 
         <div class="col">
             <h4>Empresa</h4>
-            <a href="#">Nosotros</a>
-            <a href="#">Envío</a>
-            <a href="#">Retiros</a>
-            <a href="#">Nuestras Sucursales</a>
-            <a href="#">Términos y condiciones</a>
-            <a href="#">Trabajá con nosotros</a>
-            <a href="#">Contatanos</a>
+            <a  >Nosotros</a>
+            <a  >Envío</a>
+            <a  >Retiros</a>
+            <a  >Nuestras Sucursales</a>
+            <a  >Términos y condiciones</a>
+            <a  >Trabajá con nosotros</a>
+            <a  >Contatanos</a>
 
 
         </div>
 
         <div class="col">
             <h4>Mi Cuenta</h4>
-            <a href="#">Ingreso</a>
-            <a href="#">Ver Carrito</a>
-            <a href="#">Mi lista de Compras</a>
-            <a href="#">Seguimiento de Envio</a>
-            <a href="#">Ayuda</a>
+            <a  >Ingreso</a>
+            <a  >Ver Carrito</a>
+            <a  >Mi lista de Compras</a>
+            <a  >Seguimiento de Envio</a>
+            <a  >Ayuda</a>
 
         </div>
 
@@ -679,8 +667,9 @@
         </div>
         </div>
     </footer>
+    <script async src="scriptProduct.js"></script>
 
-    <script src="script.js"></script>
+    <script async src="script.js"></script>
 </body>
 
 </html>

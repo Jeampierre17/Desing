@@ -3,6 +3,7 @@ const close = document.getElementById('close');
 const nav = document.getElementById('navbar');
 const add = document.querySelector('#lg-bag');
 const buttonAdd = document.querySelector('#addProduct');
+const cartAdd = document.querySelectorAll('#add');
 const shop = document.getElementById('shop');
 const shopMobile = document.querySelector('#shopMobile');
 const elementsTitle = document.querySelector("h4");
@@ -13,8 +14,7 @@ const opacar = document.querySelector(".opacar");
 const btflotan = document.querySelector('button.btflotan');
 const msflota = document.querySelector('.msflota');
 const quantityProduct = document.querySelector(".quatity");
-const cantidad= document.querySelector("#cantidad")
-var contador = 0;
+
 let h5 = document.createElement("h5");
 
 
@@ -63,4 +63,6 @@ buttonAdd.addEventListener('click',  () => {
      quantityProduct.textContent = contador;
     
   })
+
+  
   
